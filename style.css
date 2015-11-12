@@ -1,0 +1,30 @@
+body{
+    margin: 100px;
+}
+td, th, tr, table{
+    transition: all 2s;
+
+}
+
+td:hover, th:hover{
+    background: #376638;
+    color: white;
+}
+
+table:hover{
+    transform: scale(1.3);
+}
+
+tr:hover{
+    transform: translateX(50px);
+}
+
+@keyframes roll{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rolling:hover{
+    animation: roll 20s infinite;
+}
